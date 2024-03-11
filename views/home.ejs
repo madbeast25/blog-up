@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<div class="cont">
+    <% if(locals.greet) { %>
+    <% if(greet>=7 && greet < 12){%>
+    <h1 class="welcome"> Mornin Sunshine 🌞,<br>Welcome to Blog-up</h1>
+    <% } else if(greet >=12 && greet < 16) { %>
+        <h1 class="welcome"> Good afternoon 🤠, howdy partner!.<br>Welcome to Blog-up</h1>
+    <% } else if(greet >=16 && greet < 19) { %></19>
+        <h1 class="welcome"> Evenin Amigo 😎,<br>Welcome to Blog-up</h1>
+   <% } else if(greet >=21 ) { %>
+    <h1 class="welcome"> Are you still up 😶‍🌫️,<br>Welcome to Blog-up</h1>
+    <% } %>
+    <% } %>
+    <a href="/post"><button class="mk-post-btn">Make a post</button></a>
+</div>
+
+<%- include("partials/footer.ejs") %>
